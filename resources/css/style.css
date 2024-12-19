@@ -1,0 +1,115 @@
+/* Variables de base */
+:root {
+    --primary-color: #c445da;
+    --secondary-color: #41d1ce;
+    --background-light: #f4f4f4;
+    --text-dark: #333;
+    --white: #fff;
+}
+
+/* Réinitialisation générale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Conteneur principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Liens */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #179e34;
+}
+
+.btn-danger {
+    background-color: var(--secondary-color);
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+table tr:nth-child(even) {
+    background-color: var(--background-light);
+}
+
+/* Pied de page */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
